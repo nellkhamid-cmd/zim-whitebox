@@ -101,8 +101,8 @@ a { color: inherit; }
 .hero__title .q { display: block; margin-top: 8px; padding-bottom: .06em; font-size: clamp(32px, 9.2vw, 56px); line-height: 1.14; }
 .hero__card { margin-top: 24px; padding: 20px; background: var(--green); color: var(--white); }
 .hero__card-title { font-size: 22px; line-height: 1.25; }
-.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-.tags li { padding: 9px 14px; border: 1px solid rgba(255, 255, 255, .72); font-size: 16px; line-height: 1.2; white-space: nowrap; }
+.tags { display: flex; flex-wrap: nowrap; justify-content: space-between; gap: 6px; margin-top: 14px; }
+.tags li { padding: 8px clamp(6px, 2.1vw, 11px); border: 1px solid rgba(255, 255, 255, .72); font-size: clamp(12px, 3.5vw, 15px); line-height: 1.2; white-space: nowrap; }
 .hero__card .btn { margin-top: 16px; }
 .hero .note { margin-top: 12px; }
 .hero__media { background: var(--bg-3); overflow: hidden; }
@@ -307,3 +307,5 @@ a { color: inherit; }
 }
 
 .nw { white-space: nowrap; }
+@media (max-width: 349px) { .tags { gap: 4px; } .tags li { padding-inline: 5px; font-size: 11px; } }
+@media (min-width: 900px) and (max-width: 1199px) { .tags li { padding-inline: 8px; font-size: 14px; } }
