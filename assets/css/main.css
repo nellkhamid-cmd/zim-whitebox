@@ -216,7 +216,7 @@ a { color: inherit; }
   .house__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: start; }
   .house__right { padding-top: 34px; }
   .house__lead { font-size: 24px; max-width: 26em; }
-  .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
 }
 
 /* ---------- Локация ---------- */
@@ -305,3 +305,5 @@ a { color: inherit; }
   .hero__media img { animation: hero-zoom 1.4s var(--ease-out) both; }
   @keyframes hero-zoom { from { transform: scale(1.05); } to { transform: none; } }
 }
+
+.nw { white-space: nowrap; }
